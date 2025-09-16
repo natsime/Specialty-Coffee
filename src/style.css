@@ -6,15 +6,70 @@
 }
 
 body {
-    font-family: var(--default-font-family);
     background-color: var(--secondary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: black;
-    font-family: var(--heading-font-family);
-    font-weight: bold;
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("../img/hero.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 200px 0;
+}
+
+header h1{
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    margin: 30px 0;
+}
+
+header h2 {
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header h3 {
+    font-family: var(--default-font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    color: var(--branding-color);
+    text-decoration: none;
+    padding: 16px 32px;
+    display: inline-block;
+    margin: 32px;
+
+}
+
+header a:hover {
+    background-color: var(--branding-color);
+    color: var(--secondary-color);
+}
+
 
 h1 {
     line-height: 144px;
@@ -25,4 +80,22 @@ p {
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
+}
+
+
+@media (max-width: 900px) {
+    header {
+        padding: 60px 0;
+    }
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
 }
