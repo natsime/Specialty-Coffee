@@ -82,6 +82,43 @@ p {
     line-height: 30px;
 }
 
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+main {
+    background-color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: black;
+    text-transform: uppercase;
+}
+
+main h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: var(--branding-color);
+    font-family: var(--heading-font-family);
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
 footer {
     background-color: var(--branding-color);
     color: var(--secondary-color);
@@ -124,8 +161,30 @@ footer a:hover {
 
 .grid {
     display: grid;
+    gap: 20px;
+}
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.grid-3-columns {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.cherry {
+  width: 470px;
+  height: 380px;
+  aspect-ratio: 4 / 3;     /* keeps a nice proportion */
+  object-fit: cover;       /* crop instead of squish */
+  object-position: center; /* centre the focal point */
+  display: block;
+  max-width: 100%;
+}
+
 
 @media (max-width: 960px) {
     header {
@@ -141,5 +200,14 @@ footer a:hover {
 
     header h3 {
         font-size: 12px;
+    }
+
+     .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }
