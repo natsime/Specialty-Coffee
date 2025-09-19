@@ -246,6 +246,11 @@ footer a:hover {
     text-align: center;
 }
 
+.embed {
+    width: 100%;
+    aspect-ratio: 1 /1;
+}
+
 
 @media (max-width: 960px) {
     header {
