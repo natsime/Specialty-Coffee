@@ -82,10 +82,52 @@ p {
     line-height: 30px;
 }
 
+.card {
+    background-color: white;
+}
+
+.card h4 {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.card p {
+    padding-left: 30px;
+     margin-top: 10px; 
+}
+
+.card h5 {
+    padding-left: 30px;
+     margin-top: 10px;
+}
+
+.btn {
+    display: block;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: var(--branding-color);
+}
+
+.btn:hover {
+    color: var(--branding-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
+}
+
+section.secondary {
+    background-color: #f8f8f8;
 }
 
 main {
@@ -107,7 +149,7 @@ main h3 {
     font-size: 40px;
     line-height: 1.5;
     color: var(--branding-color);
-    font-family: var(--heading-font-family);
+    font-family: var(--heading-font-family);;
 }
 
 main p {
@@ -116,6 +158,21 @@ main p {
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
+}
+
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: black;
+    font-family: var(--heading-font-family);
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    color: black;
 }
 
 
@@ -183,6 +240,10 @@ footer a:hover {
   object-position: center; /* centre the focal point */
   display: block;
   max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
