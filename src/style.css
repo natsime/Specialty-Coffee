@@ -87,17 +87,17 @@ p {
 }
 
 .card h4 {
-    padding-left: 30px;
+    padding: 20px 0 0 30px;
     margin-top: 10px;
 }
 
 .card p {
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
      margin-top: 10px; 
 }
 
 .card h5 {
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
      margin-top: 10px;
 }
 
@@ -112,6 +112,7 @@ p {
     text-transform: uppercase;
     padding: 16px;
     background-color: var(--branding-color);
+    margin: 0;
 }
 
 .btn:hover {
